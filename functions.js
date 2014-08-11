@@ -56,7 +56,7 @@ function cursorAnimation() {
 function exec1(cmd){
             cleanEl.html('clr<br>'+pwd);
             var cmdarr = cmd.split(" ");
-        		alert(cmdarr[0]);
+        	//	alert(cmdarr[0]);
         		switch(cmdarr[0]){
         			case 'cd':
         				exec2(cmdarr);
@@ -66,7 +66,8 @@ function exec1(cmd){
   						type1();
         				break;
         			default :
-        			  	commandEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >');
+        			
+        			  	commandEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >'+'<br>'+pwd);
 						//type1();
         		}
      //       commandEl.html($('input#user-caption').val()+'<br>'+pwd);
@@ -92,11 +93,11 @@ function exec2(cmd){
 						pwd = 'abhinav@DAIICT:~ '        				
 						captionEl.html($('input#user-caption').val()+'<br>'+pwd);
         				}else{
-        			  	commandEl.html('<b>Error: Cannot go back from root</b><br>You are already at root, so you cannot go one level up.<br> Try using < cd projects >');
+        			  	commandEl.html('<b>Error: Cannot go back from root</b><br>You are already at root, so you cannot go one level up.<br> Try using < cd projects >'+'<br>'+pwd);
         				}
         				break;
         			default :
-        			  	commandEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >');
+        			  	commandEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >'+'<br>'+pwd);
 						//type1();
         		}
      //       commandEl.html($('input#user-caption').val()+'<br>'+pwd);
