@@ -59,14 +59,21 @@ function exec1(cmd){
         	//	alert(cmdarr[0]);
         		switch(cmdarr[0]){
         			case 'cd':
+						commandEl.html($('input#user-caption').val()+'<br>');
         				exec2(cmdarr);
         				break;
         			case 'abhinav':
+        				if(pwd == 'abhinav@DAIICT/projects:~ '){
+						commandEl.html($('input#user-caption').val()+'<br>'+pwd);
+        			  	captionEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd .. > to go one level up and then use < abhinav > '+'<br>'+pwd);
+        				}else{
+						commandEl.html($('input#user-caption').val()+'<br>'+pwd);
         			    caption =  document.getElementById('out1').innerHTML;
   						type1();
+  						}
         				break;
         			default :
-        			
+						commandEl.html($('input#user-caption').val()+'<br>'+pwd);
         			  	commandEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >'+'<br>'+pwd);
 						//type1();
         		}
@@ -82,22 +89,22 @@ function exec2(cmd){
         		alert(pwd);
         		switch(cmd[1]){
         			case 'projects':
-        				alert('case(project)');
+        			//	alert('case(project)');
         				pwd = 'abhinav@DAIICT/projects:~ ';
-						captionEl.html($('input#user-caption').val()+'<br>'+pwd);
+						captionEl.html(pwd);
         			    caption =  '';
         				break;
         			case '..':
-   			        	alert('case(..)');
+   			        //	alert('case(..)');
         				if(pwd == 'abhinav@DAIICT/projects:~ '){
 						pwd = 'abhinav@DAIICT:~ '        				
-						captionEl.html($('input#user-caption').val()+'<br>'+pwd);
+						captionEl.html(pwd);
         				}else{
         			  	commandEl.html('<b>Error: Cannot go back from root</b><br>You are already at root, so you cannot go one level up.<br> Try using < cd projects >'+'<br>'+pwd);
         				}
         				break;
         			default :
-        			  	commandEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >'+'<br>'+pwd);
+        			  	captionEl.html('<b>Error: Command Not Found</b><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects >'+'<br>'+pwd);
 						//type1();
         		}
      //       commandEl.html($('input#user-caption').val()+'<br>'+pwd);
