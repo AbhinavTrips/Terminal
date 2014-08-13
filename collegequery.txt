@@ -1,1 +1,5 @@
-collegequery
+<br><span style="color:#0CC5DA"><b>collegequery.in</b> was the first website that I made with the aim of helping students to choose a college immediately after intermediate.
+<br>
+During my own turn of going through the process of all the rounds of counselling to get a college, I realised that information about colleges was often fragmented and unreliable. Further, the college rankings are also a deceiving parameter as the rankings are based on the inputs provided by the college management which is obviously 'not always' honest. Facing this problem, I decided to make an online portal where the students could see the views of the college students about their colleges. The student views are much more reliable and they also gave correct details about the important things like the mess food, scholarships, grading policy, quality of faculty etc.
+I still own the domain but no longer maintain this website as the entrance procedure for the engineering colleges changed.  collegequery will be up again when I will have gathered substantial amount of reliable data.
+</span> 
