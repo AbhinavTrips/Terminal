@@ -1,3 +1,6 @@
-Hi! This is Abhinav.
-I am sure that you loved this terminal.<br>
-<iframe width="560" height="315" src="//www.youtube.com/embed/6gbXtcemQ5k" frameborder="0" allowfullscreen></iframe>.
+<br><span style="color:#0CC5DA">Hi! I am glad that you actually took the pain of typing a command. Thank you so much for that.
+So to begin with, I am <b>Abhinav Tripathi</b> - a final year undergraduate student at Dhirubhai Ambani Institute of Information and Communication Technology, Gandhinagar. I know that its a HUGE name so you can refer to it as DA-IICT.<br>
+As the institute name suggests, its an ICT institue and has only one branch. ICT is an amalgamation of ECE, CS and IT, Isn't it awesome? Well you may think that way but it is too much work!<br>
+Lets leave ICT alone and talk about me. I am an <b>innovator</b> who continuously strives to solve existing problems with out of the box solution. My <b>areas of interest</b> include Web Development, App Development and Machine Learning.<br>
+Apart from this, I love to closely follow stock markets. I think I am a good singer - I'll leave it to you to decide though, in case we happen to meet :)
+</span> 

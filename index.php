@@ -2,6 +2,14 @@
 <html>
 <?php
 $about = file_get_contents('about.txt');
+$collegequery = file_get_contents('collegequery.txt');
+$dastreet = file_get_contents('dastreet.txt');
+$framepics = file_get_contents('framepics.txt');
+$makodas = file_get_contents('makodas.txt');
+$heart = file_get_contents('heartattackpredictor.txt');
+$reader = file_get_contents('readforblind.txt');
+$online = file_get_contents('online.txt');
+$pronounce = file_get_contents('pronounce.txt');
 ?>
 
 <head>
@@ -54,13 +62,40 @@ input:focus{
 *:focus {
     outline: 0;
 }
-#out1{	
+#about, #collegequery, #dastreet, #heart, #makodas, #online, #pronounce, #reader, #framepics{	
 	display: none;
 }
 
-    .auto-style1 {
-		color: #0000FF;
-	}
+#pd{
+	color : lime;
+}
+#inp{
+	color: blue;
+}
+
+#err{
+	color : red;
+}
+
+    .auto-style2 {
+	color: #0CC5DA;
+}
+.auto-style3 {
+	font-size: small;
+	color: #FF0000;
+}
+.auto-style4 {
+	color: #FFFFFF;
+}
+.auto-style5 {
+	color: #FF0000;
+}
+.auto-style6 {
+	color: #00FF00;
+}
+.auto-style7 {
+	font-size: small;
+}
 
     </style>
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
@@ -79,37 +114,62 @@ input:focus{
 <body style="min-width:600px">
 <div style="float:left; width:55%;min-height:550px;min-width:600px;border-style:solid;background-color: #481036; border-radius:30px; border-width:40px; border-color:black;margin:1%;">
   <div style="background-color: #481036;margin: 1%"><p>
-    <span id="out1"><?php echo $about?></span>
+    <span id="about"><?php echo $about?></span>
+    <span id="collegequery"><?php echo $collegequery ?></span>
+    <span id="makodas"><?php echo $makodas?></span>
+    <span id="dastreet"><?php echo $dastreet?></span>
+    <span id="reader"><?php echo $reader?></span>
+    <span id="framepics"><?php echo $framepics?></span>
+    <span id="heart"><?php echo $heart?></span>
+    <span id="pronounce"><?php echo $pronounce?></span>
+    <span id="online"><?php echo $online?></span>
     </p>
     <p class="console">
-        <span>abhinav@DAIICT:~ </span><span id="clean"></span><span id="command"></span><span id="caption"></span><span><input type="text" id="user-caption" style="background-color:#481036"/></span>
+        <span id="pd">abhinav@DAIICT:~ </span><span id="clean"></span><span id="command"></span><span id="caption"></span><span id="inp"><input type="text" id="user-caption" style="background-color:#481036; color:#bbb;font-size:16px"/></span>
     </p>
   </div>
 </div>
 
-<div style="float:left; width:30%;min-height:630px;min-width:200px;background-color : black;margin-left:5%;margin:1%; border-radius:10px;">
-	<p>Please type in the following commands into the terminal</p>
+<div style="float:left; width:30%;min-height:604px;min-width:200px;background-color : black;margin-left:5%;margin:1%; border-radius:30px;padding:1%">
+	<p><span class="auto-style6">Please type in the following commands into the terminal<br>
+	</span><span class="auto-style3">*Please do not use angular brackets while 
+	writing commands</span></p>
 	<ol>
-		<li>For brief intro about me, type:<ul>
-			<li><span class="auto-style1"><em>abhinav</em></span> </li>
+		<li><span class="auto-style6">For brief intro about me, type:</span><ul>
+			<li class="auto-style2"><strong>&lt; abhinav &gt;</strong></li>
 		</ul>
 		</li>
-		<li>To know about my projects, type :<ul class="auto-style1">
-			<li><em>cd projects/collegequery</em></li>
-			<li><em>cd projects/makodas</em></li>
-			<li><em>cd projects/readforblind</em></li>
-			<li><em>cd projects/dastreet</em></li>
-			<li><em>cd projects/framepics</em></li>
-			<li><em>cd projects/heart</em></li>
-			<li><em>cd projects/pronounce</em></li>
+		<li><span class="auto-style6">To know about my projects, type :</span><ul class="auto-style2">
+			<li><strong>&lt; cd projects/collegequery &gt;</strong></li>
+			<li><strong>&lt; cd projects/makodas &gt;</strong></li>
+			<li><strong>&lt; cd projects/readforblind &gt;</strong></li>
+			<li><strong>&lt; cd projects/dastreet &gt;</strong></li>
+			<li><strong>&lt; cd projects/framepics &gt;</strong></li>
+			<li><strong>&lt; cd projects/heart &gt;</strong></li>
+			<li><strong>&lt; cd projects/pronounce &gt;</strong></li>
 		</ul>
 		</li>
-		<li>To find me online, type :<ul>
-			<li class="auto-style1"><em>github</em></li>
-			<li class="auto-style1"><em>blogger</em></li>
+		<li><span class="auto-style6">To find me online, type :</span><ul>
+			<li class="auto-style2"><strong>&lt; online &gt;</strong></li>
+		</ul>
+		</li>
+		<li class="auto-style4"><span class="auto-style6">To go back to root 
+		from </span><a class="auto-style6" href="mailto:abhinav@DAIICT:~">
+		<span class="auto-style7">abhinav@DAIICT/projects :~</span></a><span class="auto-style6">
+		</span>
+		<ul>
+			<li class="auto-style2"><strong>&lt; cd ..&nbsp; &gt;</strong></li>
 		</ul>
 		</li>
 	</ol>
+	<p><span class="auto-style5">*Please note that the commands listed under 
+	point number 2 will work when you are at root i.e. </span>
+	<a class="auto-style5" href="mailto:abhinav@DAIICT:~">abhinav@DAIICT:~</a></p>
+	<p><span class="auto-style5">You can alternatively type &lt; cd projects &gt; to 
+	reach projects directory and then type project name in the next step when 
+	the prompt displays </span>
+	<a class="auto-style5" href="mailto:abhinav@DAIICT:~">
+	abhinav@DAIICT/projects :~</a></p>
 </div>
 </body>
 </html>
