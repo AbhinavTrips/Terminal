@@ -1,1 +1,5 @@
-dastreet
+<br><span style="color:#0CC5DA"><b>DA-Street</b> was an online virtual stock market game that I developed from scratch for my college's techno-cultural fest, Synapse.
+<br>
+I have been passionate about Stock Markets since my childhood so it was disturbing for me when my college hosted a virtual stock market game on some third party platform ( khelostocks.com ). The interface was pathetic and it was kind of shameful that despite being an ICT institute, we were holding such an event on athird party platform. During the second year of my undergrad, I took the initiative and developed my own virtual stock market game based. You can have a look at the demo video below. Sorry, for the low sound(video might take some time to load, please be patient) :
+<iframe width="560" height="315" src="//www.youtube.com/embed/8AulEgZ72Us" frameborder="0" allowfullscreen></iframe>  
+</span> 

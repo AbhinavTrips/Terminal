@@ -77,24 +77,29 @@ input:focus{
 	color : red;
 }
 
+
     .auto-style2 {
-	color: #0CC5DA;
-}
-.auto-style3 {
-	font-size: small;
-	color: #FF0000;
-}
-.auto-style4 {
-	color: #FFFFFF;
-}
-.auto-style5 {
-	color: #FF0000;
-}
-.auto-style6 {
-	color: #00FF00;
-}
-.auto-style7 {
-	font-size: small;
+		color: #0CC5DA;
+	}
+	.auto-style3 {
+		font-size: small;
+		color: #FF0000;
+	}
+	.auto-style4 {
+		color: #FFFFFF;
+	}
+	.auto-style5 {
+		color: #FF0000;
+	}
+	.auto-style6 {
+		color: #00FF00;
+	}
+	.auto-style7 {
+		font-size: small;
+	}
+
+    .auto-style9 {
+	font-size: 13px;
 }
 
     </style>
@@ -109,6 +114,7 @@ input:focus{
 	
 //function to execute commend on pressing enter
 </script>
+
 </head>
 
 <body style="min-width:600px">
@@ -145,7 +151,7 @@ input:focus{
 			<li><strong>&lt; cd projects/readforblind &gt;</strong></li>
 			<li><strong>&lt; cd projects/dastreet &gt;</strong></li>
 			<li><strong>&lt; cd projects/framepics &gt;</strong></li>
-			<li><strong>&lt; cd projects/heart &gt;</strong></li>
+			<li><strong>&lt; cd projects/heartattackpredictor &gt;</strong></li>
 			<li><strong>&lt; cd projects/pronounce &gt;</strong></li>
 		</ul>
 		</li>
@@ -162,14 +168,22 @@ input:focus{
 		</ul>
 		</li>
 	</ol>
-	<p><span class="auto-style5">*Please note that the commands listed under 
-	point number 2 will work when you are at root i.e. </span>
-	<a class="auto-style5" href="mailto:abhinav@DAIICT:~">abhinav@DAIICT:~</a></p>
+	<p><span class="auto-style5"><span class="auto-style9">*Please note that the commands listed under 
+	point number 2 will work when you are at root i.e. </span> </span>
+	<span class="auto-style9">
+	<a class="auto-style5" href="mailto:abhinavtripathi01@gmail.com :~">abhinav@DAIICT:~</a></p>
 	<p><span class="auto-style5">You can alternatively type &lt; cd projects &gt; to 
 	reach projects directory and then type project name in the next step when 
 	the prompt displays </span>
-	<a class="auto-style5" href="mailto:abhinav@DAIICT:~">
+	<a class="auto-style5" href="mailto:abhinavtripathi01@gmail.com :~">
 	abhinav@DAIICT/projects :~</a></p>
+	<p><span class="auto-style6">I am still improving this site so please feel 
+	free to drop me any suggestion at</span>
+	<a href="mailto:abhinavtripathi01@gmail.com?subject=Hi! I have a suggestion for abhinavtripathi.com">
+	abhinavtripathi01@gmail.com</a></p>
+	<p><span class="auto-style6">You can</span>
+	<a href="https://github.com/AbhinavDAIICT/Terminal">fork this website 
+	project on github</a> .</span></p>
 </div>
 </body>
 </html>

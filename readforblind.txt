@@ -1,1 +1,6 @@
-read for blind
+<br><span style="color:#0CC5DA"><b>Read for Blind</b> is probably my best idea which I could conceptualise with the help of my 3 awesome friends and teammates. We were judged as second runner-up in <b>Microsoft Imagine Cup 2013</b> national finals under the <b>World Citizenship</b> category for developing Read For Blind.
+<br>
+Read For Blind is a Windows Phone app that lets a blind person read at his own without requiring any help from anybody. It is a voice operated app that guides the blind user at each step. It automatically captures the image of the text to be read and reads it out after performing OCR on it.<br>
+This concept was so unique that it also helped us reach in the finals of <b>Intel App Innovation Contest - 2013</b> where we ultimately won in the 'Early Bird' category.<br> You can have a look at the testing video of our app. Please excuse me for the background noise in the video. We tested the app on actual blind people in Gandhinagar blind school. Here is the video (video might take some time to load, please be patient) :
+<br> 
+<iframe width="560" height="315" src="//www.youtube.com/embed/6gbXtcemQ5k" frameborder="0" allowfullscreen></iframe></span>

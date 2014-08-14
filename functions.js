@@ -25,6 +25,7 @@ $(document).ready(function() {
 });
 
 
+
 function testTypingEffect() {
 //	caption = $('input#user-caption').val();
     caption =  document.getElementById('about').innerHTML;
@@ -35,7 +36,7 @@ function type1() {
   
     captionEl.html(caption.substr(0, captionLength++));
     if(captionLength < caption.length+1) {
-        setTimeout('type1()', 20);
+        setTimeout('type1()', 10);
     } else {
         captionEl.html(caption.substr(0, captionLength)+'<br><span id = "pd">'+pwd+'</span>');
         captionLength = 0;
@@ -61,6 +62,12 @@ function exec1(cmd){
         	//	alert(cmdarr[0]);
         			if(pwd == 'abhinav@DAIICT/projects:~ '){
      			        switch(cmdarr[0]){
+		        			case 'online':
+								commandEl.html($('input#user-caption').val()+'<br>');
+		        			    caption =  document.getElementById('online').innerHTML;
+		        				type1();
+	        				break;
+
 		        			case 'cd':
 		        			if(cmdarr[1] == '..'){
 			        			pwd = 'abhinav@DAIICT:~ ';
@@ -70,6 +77,11 @@ function exec1(cmd){
 								commandEl.html($('input#user-caption').val()+'<br><span id = "pd">'+pwd+'</span>');
 		        			  	captionEl.html('<b><span id="err">Error 0: Command Not Found</b><span><br>Try using < cd .. > or < readforblind >'+'<br><span id = "pd">'+pwd+'</span>');
 		        				}
+		        				break;
+		        			case 'abhinav':
+								commandEl.html($('input#user-caption').val()+'<br><span id = "pd">'+pwd+'</span>');
+		        			    caption =  document.getElementById('about').innerHTML;
+		  						type1();
 		        				break;
         					case 'collegequery':
 							    caption =  document.getElementById('collegequery').innerHTML;
@@ -108,15 +120,20 @@ function exec1(cmd){
 								commandEl.html($('input#user-caption').val()+'<br>');
 		        				exec2(cmdarr);
 		        				break;
+		        			case 'online':
+								commandEl.html($('input#user-caption').val()+'<br>');
+		        			    caption =  document.getElementById('online').innerHTML;
+		        				type1();
+		        				break;
 		        			case 'abhinav':
-		        				if(pwd == 'abhinav@DAIICT/projects:~ '){
-								commandEl.html($('input#user-caption').val()+'<br><span id = "pd">'+pwd+'</span>');
-		        			  	captionEl.html('<b><span id="err">Error 2: Command Not Found</b><span><br>Please enter a valid command from those listed in the command list.<br> Try using < cd .. > to go one level up and then use < abhinav > '+'<br><span id = "pd">'+pwd+'</span>');
-		        				}else{
+		        			//	if(pwd == 'abhinav@DAIICT/projects:~ '){
+							//	commandEl.html($('input#user-caption').val()+'<br><span id = "pd">'+pwd+'</span>');
+		        			//  	captionEl.html('<b><span id="err">Error 2: Command Not Found</b><span><br>Please enter a valid command from those listed in the command list.<br> Try using < cd .. > to go one level up and then use < abhinav > '+'<br><span id = "pd">'+pwd+'</span>');
+		        			//	}else{
 								commandEl.html($('input#user-caption').val()+'<br><span id = "pd">'+pwd+'</span>');
 		        			    caption =  document.getElementById('about').innerHTML;
 		  						type1();
-		  						}
+		  					//	}
 		        				break;
 		        			default :
 								commandEl.html($('input#user-caption').val()+'<br><span id = "pd">'+pwd+'</span>');
@@ -189,7 +206,7 @@ function exec2(cmdarr){
         					case 'projects/framepics':
 								pwd = 'abhinav@DAIICT/projects:~ ';
 								commandEl.html($('input#user-caption').val()+'<br>');
-							    caption =  document.getElementById('frames').innerHTML;
+							    caption =  document.getElementById('framepics').innerHTML;
 							    type1();
         					break;
         					case 'projects/pronounce':

@@ -1,1 +1,2 @@
-heart attack
+<br><span style="color:#0CC5DA"><b>Heart Attack Predictor</b> is a portable wearable device which can be worn by the vulnerable people. The device monitors the patient continuously and raises an alarm if it detects that the patient is at the risk of heart attack. I did it by monitoring the ST elevation in the ECG.<br>
+The device consists of a small circuit and a phone app interfaced via bluetooth. The device sends the data continuously to the paired phone which can upload the data to an online remote server where the data can be analysed and specific suggestions can be made for specific people.

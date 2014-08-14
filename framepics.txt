@@ -1,1 +1,2 @@
-framepics
+<br><span style="color:#0CC5DA"><b>Framepics</b> is an online shopping portal where the users can choose and buy photoframes for the photographs just like <u><a href = "http://lenskart.com">Lenskart</a></u> lets the user buy a frame for their spectacles.<br>
+It was a team project in our Software Engineering course. I implemented the user accounts and Admin panel where the owner can carry out tasks like inventory management and order tracking. We developed it for an actual client who wanted to expand his photography business.</span>
