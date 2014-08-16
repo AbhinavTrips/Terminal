@@ -131,7 +131,7 @@ input:focus{
     <span id="online"><?php echo $online?></span>
     </p>
     <p class="console">
-        <span id="pd">abhinav@DAIICT:~ </span><span id="clean"></span><span id="command"></span><span id="caption"></span><span id="inp"><input type="text" id="user-caption" style="background-color:#481036; color:#bbb;font-size:16px"/></span>
+        <span id="pd">abhinav@DAIICT:~ </span><span id="clean"></span><span id="command"></span><span id="caption"></span><span id="inp"><input type="text" id="user-caption" style="background-color:#481036; color:#bbb;font-size:16px; width: 300px"/></span>
     </p>
   </div>
 </div>
@@ -142,21 +142,21 @@ input:focus{
 	writing commands</span></p>
 	<ol>
 		<li><span class="auto-style6">For brief intro about me, type:</span><ul>
-			<li class="auto-style2"><strong>&lt; abhinav &gt;</strong></li>
+			<li><strong><input type="text" id="abhi" name="country" value="abhinav " readonly style="width: 246px"> </strong></li>
 		</ul>
 		</li>
 		<li><span class="auto-style6">To know about my projects, type :</span><ul class="auto-style2">
-			<li><strong>&lt; cd projects/collegequery &gt;</strong></li>
-			<li><strong>&lt; cd projects/makodas &gt;</strong></li>
-			<li><strong>&lt; cd projects/readforblind &gt;</strong></li>
-			<li><strong>&lt; cd projects/dastreet &gt;</strong></li>
-			<li><strong>&lt; cd projects/framepics &gt;</strong></li>
-			<li><strong>&lt; cd projects/heartattackpredictor &gt;</strong></li>
-			<li><strong>&lt; cd projects/pronounce &gt;</strong></li>
+			<li><strong><input type="text" id="cq" name="country" value="cd projects/collegequery " readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="ma" name="country" value="cd projects/makodas" readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="rb" name="country" value="cd projects/readforblind" readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="da" name="country" value="cd projects/dastreet" readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="fp" name="country" value="cd projects/framepics" readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="hp" name="country" value="cd projects/heartattackpredictor" readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="pr" name="country" value="cd projects/pronounce" readonly style="width: 246px"> </strong></li>
 		</ul>
 		</li>
 		<li><span class="auto-style6">To find me online, type :</span><ul>
-			<li class="auto-style2"><strong>&lt; online &gt;</strong></li>
+			<li><strong><input type="text" id="on" name="country" value="online" readonly style="width: 246px"> </strong></li>
 		</ul>
 		</li>
 		<li class="auto-style4"><span class="auto-style6">To go back to root 
@@ -164,7 +164,7 @@ input:focus{
 		<span class="auto-style7">abhinav@DAIICT/projects :~</span></a><span class="auto-style6">
 		</span>
 		<ul>
-			<li class="auto-style2"><strong>&lt; cd ..&nbsp; &gt;</strong></li>
+			<li><strong><input type="text" id="cdot" name="country" value="cd .." readonly style="width: 246px"> </strong></li>
 		</ul>
 		</li>
 	</ol>
@@ -172,7 +172,7 @@ input:focus{
 	point number 2 will work when you are at root i.e. </span> </span>
 	<span class="auto-style9">
 	<a class="auto-style5" href="mailto:abhinavtripathi01@gmail.com :~">abhinav@DAIICT:~</a></p>
-	<p><span class="auto-style5">You can alternatively type &lt; cd projects &gt; to 
+	<p><span class="auto-style5">You can alternatively type  cd projects  to 
 	reach projects directory and then type project name in the next step when 
 	the prompt displays </span>
 	<a class="auto-style5" href="mailto:abhinavtripathi01@gmail.com :~">

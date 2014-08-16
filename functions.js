@@ -21,6 +21,80 @@ $(document).ready(function() {
       		exec1(cmd);
       }
     });
+// making the commands clickable    
+    $('#cq').click(function(e){
+      		cmd = $('input#cq').val();
+      		document.getElementById('user-caption').value = $('input#cq').val();
+      		
+      		exec1(cmd);
+    });
+    
+    $('#rb').click(function(e){
+      		cmd = $('input#rb').val();
+      		document.getElementById('user-caption').value = $('input#rb').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#ma').click(function(e){
+      		cmd = $('input#ma').val();
+      		document.getElementById('user-caption').value = $('input#ma').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#da').click(function(e){
+      		cmd = $('input#da').val();
+      		document.getElementById('user-caption').value = $('input#da').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#hp').click(function(e){
+      		cmd = $('input#hp').val();
+      		document.getElementById('user-caption').value = $('input#hp').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#pr').click(function(e){
+      		cmd = $('input#pr').val();
+      		document.getElementById('user-caption').value = $('input#pr').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#fp').click(function(e){
+      		cmd = $('input#fp').val();
+      		document.getElementById('user-caption').value = $('input#fp').val();
+      		
+      		exec1(cmd);
+    });
+    
+    $('#abhi').click(function(e){
+      		cmd = $('input#abhi').val();
+      		document.getElementById('user-caption').value = $('input#abhi').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#on').click(function(e){
+      		cmd = $('input#on').val();
+      		document.getElementById('user-caption').value = $('input#on').val();
+      		
+      		exec1(cmd);
+    });
+
+    $('#cdot').click(function(e){
+      		cmd = $('input#cdot').val();
+      		document.getElementById('user-user-caption').value = $('input#cdot').val();
+      		
+      		exec1(cmd);
+    });
+
+
+// Clickable command end
+    
 
 });
 
@@ -33,7 +107,8 @@ function testTypingEffect() {
 }
 
 function type1() {
-  
+  $("input").off("click");
+  $("input").on("click");
     captionEl.html(caption.substr(0, captionLength++));
     if(captionLength < caption.length+1) {
         setTimeout('type1()', 10);
