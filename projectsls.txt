@@ -1,0 +1,2 @@
+<span style="color:purple">Commands: </span><br>
+<span style="color:white">abhinav    cd ..    collegequery    readforblind    dastreet    heartattackpredictor    pronounce    makodas</span>
