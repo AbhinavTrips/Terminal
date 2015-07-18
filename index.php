@@ -10,6 +10,7 @@ $heart = file_get_contents('heartattackpredictor.txt');
 $reader = file_get_contents('readforblind.txt');
 $online = file_get_contents('online.txt');
 $pronounce = file_get_contents('pronounce.txt');
+$qcards = file_get_contents('qcards.txt');
 ?>
 
 <head>
@@ -62,7 +63,7 @@ input:focus{
 *:focus {
     outline: 0;
 }
-#about, #collegequery, #dastreet, #heart, #makodas, #online, #pronounce, #reader, #framepics{	
+#about, #collegequery, #dastreet, #heart, #makodas, #online, #pronounce, #reader, #framepics, #qcards{	
 	display: none;
 }
 
@@ -80,10 +81,6 @@ input:focus{
 
     .auto-style2 {
 		color: #0CC5DA;
-	}
-	.auto-style3 {
-		font-size: small;
-		color: #FF0000;
 	}
 	.auto-style4 {
 		color: #FFFFFF;
@@ -105,6 +102,7 @@ input:focus{
     </style>
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="keyPress.js"></script>
     <script type="text/javascript">
 // function to put input always in focus    
 	function formfocus() {
@@ -112,7 +110,7 @@ input:focus{
 	}
 	window.onload = formfocus;
 	
-//function to execute commend on pressing enter
+//function to execute command on pressing enter
 </script>
 
 </head>
@@ -129,6 +127,7 @@ input:focus{
     <span id="heart"><?php echo $heart?></span>
     <span id="pronounce"><?php echo $pronounce?></span>
     <span id="online"><?php echo $online?></span>
+    <span id="qcards"><?php echo $qcards?></span>
     </p>
     <p class="console">
         <span id="pd">abhinav@DAIICT:~ </span><span id="clean"></span><span id="command"></span><span id="caption"></span><span id="inp"><input type="text" id="user-caption" style="background-color:#481036; color:#bbb;font-size:16px; width: 300px"/></span>
@@ -137,22 +136,21 @@ input:focus{
 </div>
 
 <div style="float:left; width:30%;min-height:604px;min-width:200px;background-color : black;margin-left:5%;margin:1%; border-radius:30px;padding:1%">
-	<p><span class="auto-style6">Please type in the following commands into the terminal<br>
-	</span><span class="auto-style3">*Please do not use angular brackets while 
-	writing commands</span></p>
+	<p><span class="auto-style6">Please type in the following commands into the terminal</span></p>
 	<ol>
 		<li><span class="auto-style6">For brief intro about me, type:</span><ul>
 			<li><strong><input type="text" id="abhi" name="country" value="abhinav " readonly style="width: 246px"> </strong></li>
 		</ul>
 		</li>
 		<li><span class="auto-style6">To know about my projects, type :</span><ul class="auto-style2">
-			<li><strong><input type="text" id="cq" name="country" value="cd projects/collegequery " readonly style="width: 246px"> </strong></li>
-			<li><strong><input type="text" id="ma" name="country" value="cd projects/makodas" readonly style="width: 246px"> </strong></li>
-			<li><strong><input type="text" id="rb" name="country" value="cd projects/readforblind" readonly style="width: 246px"> </strong></li>
-			<li><strong><input type="text" id="da" name="country" value="cd projects/dastreet" readonly style="width: 246px"> </strong></li>
-			<li><strong><input type="text" id="fp" name="country" value="cd projects/framepics" readonly style="width: 246px"> </strong></li>
-			<li><strong><input type="text" id="hp" name="country" value="cd projects/heartattackpredictor" readonly style="width: 246px"> </strong></li>
-			<li><strong><input type="text" id="pr" name="country" value="cd projects/pronounce" readonly style="width: 246px"> </strong></li>
+			<li><strong><input type="text" id="cq" name="country" value="cd projects/collegequery " readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="ma" name="country" value="cd projects/makodas" readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="rb" name="country" value="cd projects/readforblind" readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="da" name="country" value="cd projects/dastreet" readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="fp" name="country" value="cd projects/framepics" readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="hp" name="country" value="cd projects/heartattackpredictor" readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="pr" name="country" value="cd projects/pronounce" readonly style="width: 200px"> </strong></li>
+			<li><strong><input type="text" id="qc" name="country" value="cd projects/qcards" readonly style="width: 200px"> </strong></li>
 		</ul>
 		</li>
 		<li><span class="auto-style6">To find me online, type :</span><ul>
@@ -170,20 +168,19 @@ input:focus{
 	</ol>
 	<p><span class="auto-style5"><span class="auto-style9">*Please note that the commands listed under 
 	point number 2 will work when you are at root i.e. </span> </span>
-	<span class="auto-style9">
 	<a class="auto-style5" href="mailto:abhinavtripathi01@gmail.com :~">abhinav@DAIICT:~</a></p>
-	<p><span class="auto-style5">You can alternatively type  cd projects  to 
+	<p><span class="auto-style5"><span class="auto-style9">You can alternatively type  cd projects  to 
 	reach projects directory and then type project name in the next step when 
-	the prompt displays </span>
+	the prompt displays </span></span>
 	<a class="auto-style5" href="mailto:abhinavtripathi01@gmail.com :~">
 	abhinav@DAIICT/projects :~</a></p>
 	<p><span class="auto-style6">I am still improving this site so please feel 
 	free to drop me any suggestion at</span>
-	<a href="mailto:abhinavtripathi01@gmail.com?subject=Hi! I have a suggestion for abhinavtripathi.com">
+	<a href="mailto:abhinavtripathi01@gmail.com?subject=Hi! I have a suggestion for abhinavtripathi.website">
 	abhinavtripathi01@gmail.com</a></p>
 	<p><span class="auto-style6">You can</span>
 	<a href="https://github.com/AbhinavDAIICT/Terminal">fork this website 
-	project on github</a> .</span></p>
+	project on github</a> .</p>
 </div>
 </body>
 </html>
