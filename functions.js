@@ -10,7 +10,6 @@ $(document).ready(function() {
     captionEl = $('#caption');
     cleanEl = $('#clean');
     commandEl = $('#command');
- 
     $('#test-typing').click(function(){
         testTypingEffect();
     });
@@ -186,6 +185,10 @@ function exec1(cmd){
 							    caption =  document.getElementById('pronounce').innerHTML;
 							    type1();
         					break;
+	        				case 'qcards':
+							    caption =  document.getElementById('qcards').innerHTML;
+							    type1();
+        					break;
 	        				default :
 		        			  	captionEl.html('<b><span id="err">Error 1: Command Not Found</b><span><br>Please enter a valid command from those listed in the command list.<br> Try using < cd projects > or < readforblind >'+'<br><span id = "pd">'+pwd+'</span>');
 		        			}
@@ -288,6 +291,12 @@ function exec2(cmdarr){
 								pwd = 'abhinav@DAIICT/projects:~ ';
 								commandEl.html($('input#user-caption').val()+'<br>');
 							    caption =  document.getElementById('pronounce').innerHTML;
+							    type1();
+        					break;
+	        				case 'projects/qcards':
+								pwd = 'abhinav@DAIICT/projects:~ ';
+								commandEl.html($('input#user-caption').val()+'<br>');
+							    caption =  document.getElementById('qcards').innerHTML;
 							    type1();
         					break;
 	        				default :
