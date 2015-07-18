@@ -1,2 +1,2 @@
-<br><span style="color:#0CC5DA">You might like to visit my blog - <u><a href = "http://without-fear-or-favour.blogspot.in/">Without Fear Of Favour</a></u> <br><br>
-You can also have a look at some of my projects' code on <u><a href="https://github.com/AbhinavDAIICT">GitHub (username - AbhinavDAIICT)</a></u><br>
+</br><span style="color:#0CC5DA">You might like to visit my blog - <u><a href = "http://without-fear-or-favour.blogspot.in/">Without Fear Of Favour</a></u> </br></br>
+You can also have a look at some of my projects' code on <u><a href="https://github.com/AbhinavDAIICT">GitHub (username - AbhinavDAIICT)</a></u></br></span>
